@@ -1,3 +1,5 @@
+/* Most inefficient .css youll see today :D */
+
 body {
     background-color: rgb(250, 250, 250);
 }
@@ -6,6 +8,14 @@ body {
     display: inline;
     position: relative;
     overflow: hidden;
+}
+
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 .underline:after {
@@ -22,17 +32,24 @@ body {
     transition-timing-function: ease-out;
 }
 
-.underline:hover:after,
-.underline:focus:after,
-.underline:active:after {
-    left: 0;
-    right: auto;
-    width: 100%;
+.announcement {
+    color: rgba(0, 0, 0, 0.8);
+    font-style: oblique;
+    margin: 0px;
+    font-size: 0.8rem;
 }
 
-.middle {
+.email {
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+    padding: 2px;
+}
+
+.title {
     text-align: center;
     font-style: bold;
+    margin-bottom: 2rem;
+    padding: 10px;
 }
 
 a {
@@ -41,7 +58,7 @@ a {
 
 figcaption {
     color: rgba(0, 0, 0, 0.8);
-    font-size: 1rem;
+    font-size: 0.8rem;
     display: block;
     text-align: center;
 }
@@ -68,22 +85,21 @@ h3 {
     color: black;
     font-family: "Gelasio", serif;
     margin-top: 1em;
-    margin-bottom: 0.8em;
     display: inline-block;
     transition: 0.2s;
+    margin-bottom: 0px;
 }
 
 h1 {
     margin: 15px;
     margin-bottom: 0px;
     font-family: "Gelasio", serif;
-    font-weight: lighter;
     font-size: 2.6rem;
     margin-right: 8px;
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .overlay {
@@ -116,11 +132,13 @@ body {
         margin-bottom: 2rem;
         flex: 1 1 auto;
     }
+    .announcement {
+        font-size: 0.9rem;
+    }
     h1 {
         margin: 20px;
         margin-bottom: 0px;
         font-size: 3.6rem;
-        margin-right: 8px;
     }
     h2 {
         font-size: 2.6rem;
@@ -129,7 +147,6 @@ body {
     h2,
     h3 {
         margin-top: 0.5em;
-        margin-bottom: 0.3em;
     }
     .desktop {
         display: initial !important;
