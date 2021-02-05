@@ -1,5 +1,29 @@
 /* Most inefficient .css youll see today :D */
 
+@keyframes highlightShimmer {
+    0% {
+        background-position: -100px 50
+    }
+    100% {
+        background-position: 1000px 0
+    }
+}
+
+.highlight {
+    padding: 10px;
+    color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: highlightShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(120deg, #ffffff 20%, #a9eafc 30%, #ffffff 40%);
+    background-size: 1000px 1000px;
+    position: relative;
+}
+
 body {
     background-color: rgb(250, 250, 250);
 }
