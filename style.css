@@ -61,6 +61,7 @@ body {
     font-style: oblique;
     margin: 0px;
     font-size: 0.8rem;
+    margin-bottom: 5px;
 }
 
 .email {
@@ -72,7 +73,7 @@ body {
 .title {
     text-align: center;
     font-style: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     padding: 10px;
 }
 
