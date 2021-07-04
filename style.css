@@ -10,7 +10,7 @@
 }
 
 .highlight {
-    padding: 10px;
+    padding: 10px !important;
     color: rgba(0, 0, 0, 0);
     border-radius: 10px;
     animation-duration: 1.7s;
@@ -88,13 +88,14 @@ figcaption {
 }
 
 .mag {
+    padding: 3px;
     flex: 0 0 auto;
     margin: 0.5rem;
-    box-shadow: 5px 5px 5px #00000013;
+    box-shadow: 5px 5px 10px #0000003d;
     border-radius: 4px;
     transition-duration: 0.5s;
     max-width: calc(45% - 0.5rem);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(250, 250, 250);
 }
 
 .mag:hover {
